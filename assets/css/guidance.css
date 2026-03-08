@@ -1,0 +1,183 @@
+body{
+
+margin:0;
+font-family:Arial;
+background:#c8d8db;
+
+}
+
+
+
+/* hero */
+
+.guide-hero{
+
+text-align:center;
+padding:100px 20px;
+
+animation:fadeDown 1s;
+
+}
+
+.guide-hero h1{
+
+font-size:42px;
+color:#0e5f6d;
+
+}
+
+.guide-hero p{
+
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#444;
+
+}
+
+
+
+/* steps */
+
+.steps-container{
+
+width:85%;
+margin:auto;
+
+display:flex;
+flex-direction:column;
+gap:35px;
+
+}
+
+
+
+/* step card */
+
+.step-card{
+
+display:flex;
+gap:25px;
+align-items:flex-start;
+
+background:rgba(255,255,255,0.35);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:.4s;
+
+animation:fadeUp 1s;
+
+}
+
+
+
+.step-card:hover{
+
+transform:translateY(-6px) scale(1.01);
+
+box-shadow:0 20px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* step number */
+
+.step-number{
+
+width:45px;
+height:45px;
+
+background:#0e5f6d;
+
+color:white;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+font-weight:bold;
+font-size:18px;
+
+flex-shrink:0;
+
+transition:.4s;
+
+}
+
+
+
+.step-card:hover .step-number{
+
+transform:scale(1.2) rotate(10deg);
+
+}
+
+
+
+/* content */
+
+.step-content h2{
+
+color:#0e5f6d;
+margin-top:0;
+
+}
+
+.step-content p{
+
+line-height:1.8;
+color:#333;
+
+}
+
+
+
+/* animations */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}

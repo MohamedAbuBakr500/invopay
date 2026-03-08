@@ -1,0 +1,274 @@
+body{
+
+margin:0;
+font-family:Arial;
+background:#c8d8db;
+
+}
+
+
+/* hero */
+
+.contact-hero{
+
+text-align:center;
+padding:100px 20px;
+animation:fadeDown 1s;
+
+}
+
+.contact-hero h1{
+
+font-size:40px;
+color:#0e5f6d;
+
+}
+
+.contact-hero p{
+
+max-width:700px;
+margin:auto;
+line-height:1.7;
+color:#444;
+
+}
+
+
+
+/* container */
+
+.contact-container{
+
+width:85%;
+margin:auto;
+
+display:flex;
+gap:40px;
+
+align-items:flex-start;
+
+}
+
+
+
+/* cards */
+
+.contact-info{
+
+flex:1;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+.info-card{
+
+background:rgba(255,255,255,0.35);
+
+backdrop-filter:blur(10px);
+
+padding:25px;
+
+border-radius:12px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:.4s;
+
+animation:fadeUp 1s;
+
+}
+
+
+.info-card:hover{
+
+transform:translateY(-6px) scale(1.02);
+
+box-shadow:0 20px 35px rgba(0,0,0,0.15);
+
+}
+
+
+.icon{
+
+font-size:28px;
+margin-bottom:10px;
+
+}
+
+
+
+.info-card h3{
+
+color:#0e5f6d;
+
+}
+
+
+
+.info-card p{
+
+color:#444;
+
+}
+
+
+
+/* form */
+
+.contact-form{
+
+flex:1.5;
+
+background:rgba(255,255,255,0.35);
+
+backdrop-filter:blur(10px);
+
+padding:35px;
+
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+animation:fadeUp 1.2s;
+
+}
+
+
+.contact-form h2{
+
+color:#0e5f6d;
+margin-bottom:20px;
+
+}
+
+
+
+/* inputs */
+
+.form-group{
+
+margin-bottom:20px;
+
+}
+
+
+.form-group input,
+.form-group textarea{
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:8px;
+
+outline:none;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+
+.form-group textarea{
+
+height:120px;
+resize:none;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+transform:scale(1.02);
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* button */
+
+.send-btn{
+
+background:#0e5f6d;
+
+color:white;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:16px;
+
+transition:.3s;
+
+}
+
+
+.send-btn:hover{
+
+background:#13879a;
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* animations */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}

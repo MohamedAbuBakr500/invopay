@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Invoice</title>
+
+<link rel="stylesheet" href="assets/css/create-invoice.css">
+
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+<section class="invoice-section">
+
+<div class="invoice-container">
+
+<h1>Create <span>New Invoice</span></h1>
+
+
+<!-- customer info -->
+
+<div class="invoice-form">
+
+<div class="form-group">
+<label>Customer Name</label>
+<input type="text" placeholder="Enter customer name">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Enter email">
+</div>
+
+<div class="form-group">
+<label>Invoice Date</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Invoice Number</label>
+<input type="text" placeholder="#INV-001">
+</div>
+
+</div>
+
+
+<h2 class="items-title">Invoice Items</h2>
+
+
+<!-- items header -->
+
+<div class="invoice-items-header">
+
+<span>Item</span>
+<span>Quantity</span>
+<span>Price</span>
+<span>Total</span>
+
+</div>
+
+
+<!-- items container -->
+
+<div class="invoice-items" id="items-container">
+
+<div class="invoice-item">
+
+<input type="text" placeholder="Item name">
+
+<input type="number" value="1">
+
+<input type="number" placeholder="0.00">
+
+<input type="text" value="0.00" disabled>
+
+</div>
+
+</div>
+
+
+<button class="btn-add">+ Add Item</button>
+
+
+<!-- summary -->
+
+<div class="invoice-summary">
+
+<div class="summary-row">
+<span>Subtotal</span>
+<span>0.00</span>
+</div>
+
+<div class="summary-row">
+<span>VAT</span>
+<span>0.00</span>
+</div>
+
+<div class="summary-row total">
+<span>Total</span>
+<span>0.00</span>
+</div>
+
+</div>
+
+
+<button class="btn-generate">
+Generate Invoice
+</button>
+
+</div>
+
+</section>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
