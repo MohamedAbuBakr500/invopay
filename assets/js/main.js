@@ -24,6 +24,32 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(nextSlide, 4000);
 
 });
+document.addEventListener("DOMContentLoaded", function() {
+
+    /* ========= footer Include ========= */
+
+    fetch("includes/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+
+        initfooterEffects(); // نشغل تأثيرات الهيدر بعد ما يتحمل
+      });
+
+    /* ========= Slider ========= */
+
+    // const slides = document.querySelectorAll(".slide");
+    // let current = 0;
+
+    // function nextSlide() {
+    //     slides[current].classList.remove("active");
+    //     current = (current + 1) % slides.length;
+    //     slides[current].classList.add("active");
+    // }
+
+    // setInterval(nextSlide, 4000);
+
+});
 
 
 /* ========= Functions ========= */
